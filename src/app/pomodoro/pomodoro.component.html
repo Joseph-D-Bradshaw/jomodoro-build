@@ -1,0 +1,17 @@
+<div class="wrapper">
+  <div class="container">
+    <h2>Pomodoro</h2>
+
+    <h1>{{time}}</h1>
+    <button mat-raised-button color="accent" (click)="startTimer(10)">Start Timer</button>
+  </div>
+  <div class="container">
+    <h2>Current Task</h2>
+    <h3>{{inProgress[0].title}}</h3>
+
+    <p>In Progress overview:</p>
+    <mat-list>
+      <mat-list-item *ngFor="let item of inProgress"> - {{item.title}} </mat-list-item>
+    </mat-list>
+  </div>
+</div>

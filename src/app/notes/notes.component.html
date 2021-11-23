@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="container">
+    <h2>Notes</h2>
+    <div class="form">
+      <mat-form-field>
+        <input #titleField matInput type="text" placeholder="Enter title here">
+      </mat-form-field>
+      <mat-form-field>
+        <input #descField matInput type="text" placeholder="Enter description here">
+      </mat-form-field>
+      <mat-form-field>
+        <input #expectedField matInput type="number" placeholder="Enter estimated pomodoros" value=1>
+      </mat-form-field>
+      <button mat-raised-button color="accent"
+        (click)="addToTodo(titleField.value, descField.value, expectedField.value)">Add to Todo</button>
+    </div>
+  </div>
+</div>
