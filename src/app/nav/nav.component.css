@@ -1,0 +1,39 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background: #f3f3f3;
+}
+
+nav > div {
+    display: flex;
+    gap: 15rem;
+}
+
+nav > div > div {
+    display: flex;
+    width: 100%;
+}
+
+.left-align {
+    justify-content: flex-start;
+}
+
+.right-align {
+    justify-content: flex-end;
+}
+
+a {
+    text-decoration: none;
+    font-size: large;
+    padding: 0.5rem 1rem;
+}
+
+a.active {
+    background: #851e40;
+    color: #fff;
+}
+
+a:hover:not(.active) {
+    background: #ff4081;
+    color: #fff;
+}

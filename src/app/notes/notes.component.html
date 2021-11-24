@@ -11,8 +11,11 @@
       <mat-form-field>
         <input #expectedField matInput type="number" placeholder="Enter estimated pomodoros" value=1>
       </mat-form-field>
+      <mat-radio-group [(ngModel)]="selectedStatus" required="true">
+        <mat-radio-button *ngFor="let status of statuses" [value]="status.value" [checked]="true ? status.value === 'todo' : false">{{status.displayName}}</mat-radio-button>
+      </mat-radio-group>
       <button mat-raised-button color="accent"
-        (click)="addToTodo(titleField.value, descField.value, expectedField.value)">Add to Todo</button>
+        (click)="addToTodo(titleField.value, descField.value, expectedField.value, selectedStatus)">Add to Todo</button>
     </div>
   </div>
 </div>

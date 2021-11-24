@@ -11,7 +11,7 @@
     <div cdkDropList [cdkDropListData]="todo" (cdkDropListDropped)="drop($event)" class="list">
       <mat-card class="item" *ngFor="let item of todo" cdkDrag>
         <mat-card-title>{{item.title}}</mat-card-title>
-        <mat-card-content>{{item.description}}</mat-card-content>
+        <mat-card-content>{{item.description}}  - {{item.status}}</mat-card-content>
         <div *ngIf="item.estimated">{{item.estimated}} pomodoros</div>
       </mat-card>
     </div>
