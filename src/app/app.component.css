@@ -1,0 +1,11 @@
+.background-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content {
+    margin: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+}
